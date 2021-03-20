@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>VE Y HAZLO</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <div class="container_titulo">
+        <h1 class="titulo">¿CUÁL ES TU META?</h1>
+      </div>
+      <div id="typed_strings" class="header_metas">
+        <p>BAJAR 10 LBS</p>
+        <p>APRENDER UN IDIOMA</p>
+        <p>LEER UN LIBRO</p>
+        <p>COMER SALUDABLE</p>
+        <p>AHORRAR DINERO</p>
+      </div>
+      <div class="container_typed">
+        <input class="typed"></input>
+      </div>
+      <div class="container_btn">
+        <a href="#" id="btn_principal" >VE Y HAZLO</a>
+        <a href="como_funciona.pdf" class="funciona" target="_blank">Cómo Funciona</a>
+      </div>
+    </header>
+    <section class="galeria">
+      <div class="contenedor_imagen">
+        <h2 class="letras">Bajar 10 libras</h2>
+        <div class="sombreado" id="0"></div>
+        <img src="img/bajar 10 lbs.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Viajar a un nuevo lugar</h2>
+        <div class="sombreado" id="1"></div>
+        <img src="img/viajar.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Terminar un libro</h2>
+        <div class="sombreado" id="2"></div>
+        <img src="img/libro.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Correr una marathón</h2>
+        <div class="sombreado" id="3"></div>
+        <img src="img/marathon.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Empezar un negocio</h2>
+        <div class="sombreado" id="4"></div>
+        <img src="img/negocio.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Aprender un nuevo idioma</h2>
+        <div class="sombreado" id="5"></div>
+        <img src="img/idioma.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Comer saludable todos los dias</h2>
+        <div class="sombreado" id="6"></div>
+        <img src="img/saludable.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Mejorar mis calificaciones</h2>
+        <div class="sombreado" id="7"></div>
+        <img src="img/calificaciones.jpg" alt="">
+      </div>
+      <div class="contenedor_imagen">
+        <h2 class="letras">Ahorrar dinero</h2>
+        <div class="sombreado" id="8"></div>
+        <img src="img/dinero.jpg" alt="">
+      </div>
+    </section>
+    <section class="formulario" id="formulario_seccion">
+      <div class="titulo">
+        <h3>¿Tienes una meta este año?</h3>
+        <h3>Te desafiamos a cumplirla</h3>
+      </div>
+      <form action="php/enviar.php" method="POST" id="formulario">
+        <div class="meta">
+          <input type="text" name="meta" placeholder="Mi meta es:" required>
+          <p>Para el dia</p>
+          <input type="date" name="fecha" id="dateDefault" >
+        </div>
+        <div class="pagar">
+          <p>o Pagaré</p>
+          <div class="seleccion">
+            <select name="valor">
+              <option value="$5">$5</option>
+              <option value="$10">$10</option>
+              <option value="$15">$15</option>
+              <option value="$25">$25</option>
+              <option value="$50">$50</option>
+            </select>
+          </div>
+        </div>
+        <div class="contacto">
+          <input type="text" name="nombre" placeholder="Tu Nombre" required>
+          <input type="text" name="nombre_amigo" placeholder="Nombre de un testigo" required>
+          <input type="text" name="celular" placeholder="Tu celular" required>
+          <input type="text" name="celular_amigo" placeholder="Celular de un testigo" required>
+        </div>
+        <div class="boton">
+          <input type="submit" value="Acepto el reto">
+        </div>
+      </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

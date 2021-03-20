@@ -1,0 +1,501 @@
+header {
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+header .container_titulo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .container_titulo h1 {
+  margin-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+  display: inline-block;
+  font-size: 3.5em;
+}
+
+header .container_typed {
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+header .container_typed .typed {
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+header .container_btn {
+  padding-top: 135px !important;
+  padding-bottom: 50px !important;
+  top: 25px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+header .container_btn a {
+  border: 2px solid #d00000;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 100px;
+  font-size: 3.5em;
+  background: #d00000;
+  text-align: center;
+}
+
+header .container_btn .funciona {
+  background: #ffffff;
+  color: #000000;
+  font-size: 2em;
+  border: none;
+  margin-top: 30px;
+}
+
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galeria .contenedor_imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 33.33%;
+  height: 290px;
+  position: relative;
+}
+
+.galeria .contenedor_imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.galeria .contenedor_imagen h2 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+
+.galeria .contenedor_imagen .sombreado {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.galeria .contenedor_imagen .sombreado.claro {
+  visibility: hidden;
+}
+
+.formulario {
+  width: 100%;
+  height: auto;
+  background: #000000;
+  padding-bottom: 40px;
+}
+
+.formulario .titulo {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.formulario .titulo h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.formulario form {
+  width: 100%;
+}
+
+.formulario form .meta {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.formulario form .meta p {
+  color: #ffffff;
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formulario form .meta input {
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.5em;
+  border: none;
+}
+
+.formulario form .pagar {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.formulario form .pagar p {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formulario form .pagar .seleccion {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario form .pagar .seleccion select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.5em;
+  border-radius: 30px;
+  border: none;
+}
+
+.formulario form .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.formulario form .contacto input {
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  border: none;
+  min-width: 40%;
+}
+
+.formulario form .boton {
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: 30px;
+}
+
+.formulario form .boton input {
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background: #d00000;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 35px;
+}
+
+.formulario form .boton a {
+  border-radius: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.5em;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .formulario form .meta {
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formulario form .meta input {
+    margin-bottom: 20px;
+  }
+  .formulario form .meta p {
+    margin-bottom: 20px;
+  }
+  .formulario form .pagar {
+    margin-top: 0;
+    width: 60%;
+  }
+  .formulario form .pagar p {
+    margin-bottom: 20px;
+  }
+  .formulario form .pagar .seleccion {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .formulario form .pagar .seleccion select {
+    width: 100%;
+    overflow: hidden;
+  }
+  .formulario form .pagar .seleccion select option {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .formulario form .contacto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 957px) {
+  .formulario form .boton {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header .container_btn {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .galeria .contenedor_imagen {
+    width: 100%;
+    height: 200px;
+  }
+  .formulario form .contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+  }
+  .formulario form .contacto input {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .formulario form .boton {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  header .container_btn {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .formulario form .boton {
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .formulario form .boton a {
+    text-align: center;
+  }
+  .formulario form .boton input {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .formulario .titulo h3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header .container_btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  header .container_titulo h1 {
+    font-size: 3em;
+  }
+  header .container_btn a {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .formulario form .meta {
+    width: 80%;
+  }
+  .formulario form .pagar {
+    width: 80%;
+  }
+  .formulario form .contacto {
+    width: 80%;
+  }
+  .formulario form .boton {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  header .container_btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  header .container_btn {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header .container_titulo h1 {
+    font-size: 2.8em;
+  }
+  header .container_btn a {
+    font-size: 2.8em;
+  }
+  .formulario form .meta {
+    width: 90%;
+  }
+  .formulario form .pagar {
+    width: 90%;
+  }
+  .formulario form .contacto {
+    width: 90%;
+  }
+  .formulario form .boton {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  header .container_titulo h1 {
+    font-size: 2.8em;
+  }
+  header .container_btn a {
+    font-size: 2.4em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .container_btn a {
+    font-size: 2.2em;
+  }
+}
+/*# sourceMappingURL=header.css.map */

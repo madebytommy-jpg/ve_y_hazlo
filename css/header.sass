@@ -1,0 +1,364 @@
+header
+    background: url("../img/fondo.jpg")
+    background-size: cover
+    background-position: center 0
+    background-repeat: no-repeat
+    width: 100%
+    height: auto
+    .container_titulo
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        h1
+            margin-top: 100px
+            text-align: center
+            color: #ffffff
+            background: #000000
+            display: inline-block
+            font-size: 3.5em
+    .container_typed
+        margin: auto
+        text-align: center
+        margin-top: 80px
+        .typed
+            color: #ffffff
+            font-size: 2em
+            text-align: center
+            background: none
+            border: none
+            width: 100%
+    .container_btn
+        padding-top: 135px !important
+        padding-bottom: 50px !important
+        top: 25px
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: auto
+        a
+            border: 2px solid #d00000
+            padding: 10px 30px
+            text-decoration: none
+            color: #ffffff
+            border-radius: 100px
+            font-size: 3.5em
+            background: #d00000
+            text-align: center
+        .funciona
+            background: #ffffff
+            color: #000000
+            font-size: 2em
+            border: none
+            margin-top: 30px
+.galeria
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .contenedor_imagen
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        user-select: none
+        width: 33.33%
+        height: 290px
+        position: relative
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+        h2
+            color: #ffffff
+            font-size: 2em
+            font-weight: normal
+            text-align: center
+            z-index: 1
+        .sombreado
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.6)
+            z-index: 0
+            position: absolute
+            object-fit: cover
+            top: 0
+            left: 0
+            visibility: visible
+            &.claro
+                visibility: hidden
+.formulario
+    width: 100%
+    height: auto
+    background: #000000
+    padding-bottom: 40px
+    .titulo
+        width: 100%
+        padding-top: 30px
+        h3
+            color: #ffffff
+            text-align: center
+            font-size: 2.5em
+    form
+        width: 100%
+        .meta
+            margin: auto
+            width: 80%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin-top: 50px
+            p
+                color: #ffffff
+                font-size: 1.5em
+                align-self: center
+            input
+                border-radius: 30px
+                padding-top: 13px
+                padding-bottom: 13px
+                padding-right: 28px
+                padding-left: 28px
+                font-size: 1.5em
+                border: none
+        .pagar
+            width: 80%
+            margin: auto
+            margin-top: 30px
+            p
+                color: #ffffff
+                font-size: 1.5em
+                text-align: center
+                margin-bottom: 40px
+                align-self: center
+            .seleccion
+                width: 100%
+                display: flex
+                flex-direction: row
+                justify-content: center
+                select
+                    padding-top: 8px
+                    padding-bottom: 8px
+                    padding-right: 28px
+                    padding-left: 28px
+                    font-size: 1.5em
+                    border-radius: 30px
+                    border: none
+        .contacto
+            display: flex
+            flex-direction: row
+            width: 80%
+            flex-wrap: wrap
+            margin: auto
+            justify-content: space-between
+            margin-top: 50px
+            input
+                border-radius: 30px
+                padding-top: 13px
+                padding-bottom: 13px
+                padding-right: 28px
+                padding-left: 28px
+                font-size: 1.5em
+                margin-bottom: 30px
+                border: none
+                min-width: 40%
+        .boton
+            width: 40%
+            margin: auto
+            display: flex
+            flex-direction: column-reverse
+            margin-top: 30px
+            input
+                border-radius: 30px
+                padding-top: 13px
+                padding-bottom: 13px
+                padding-right: 28px
+                padding-left: 28px
+                font-size: 1.5em
+                cursor: pointer
+                background: #d00000
+                color: #ffffff
+                border: none
+                margin-bottom: 35px
+            a
+                border-radius: 30px
+                padding-top: 13px
+                padding-bottom: 13px
+                padding-right: 28px
+                padding-left: 28px
+                font-size: 1.5em
+                background: #ffffff
+                color: #000000
+                text-decoration: none
+                text-align: center
+            
+
+//@media screen and ( max-width: 1600px )
+
+
+
+@media screen and ( max-width: 1100px )
+    .formulario
+        form
+            .meta
+                width: 60%
+                flex-direction: column
+                input
+                    margin-bottom: 20px
+                p
+                    margin-bottom: 20px
+            .pagar
+                margin-top: 0
+                width: 60%
+                p
+                    margin-bottom: 20px
+                .seleccion
+                    width: 50%
+                    margin: auto
+                    overflow: hidden
+                    select
+                        width: 100%
+                        overflow: hidden
+                        option
+                            text-align: center
+                            width: 100%
+                            max-width: 100%
+                            overflow: hidden
+            .contacto
+                width: 100%    
+
+
+@media screen and ( max-width: 957px )
+    .formulario
+        form
+            .boton
+                width: 70%
+
+
+@media screen and ( max-width: 900px )
+    header
+        .container_btn
+            width: 60%   
+
+
+@media screen and ( max-width: 811px )
+    .galeria
+        .contenedor_imagen
+            width: 100%
+            height: 200px
+    .formulario
+        form
+            .contacto
+                flex-direction: column
+                width: 60%
+                input
+                    margin-bottom: 40px
+                    width: 100%
+            .boton
+                margin-top: 20px
+
+
+@media screen and ( max-width: 744px )
+    header
+        .container_btn
+            width: 70% 
+
+
+@media screen and ( max-width: 726px )
+    .formulario
+        form
+            .boton
+                width: 60%
+                flex-direction: column-reverse
+                a
+                    text-align: center
+                input
+                    margin-bottom: 35px
+
+
+@media screen and ( max-width: 670px )
+    .formulario
+        .titulo
+            h3
+                font-size: 2em
+
+
+@media screen and ( max-width: 640px )
+    header
+        .container_btn
+            width: 80%
+
+
+@media screen and ( max-width: 554px )
+    header
+        .container_titulo
+            h1
+                font-size: 3em
+        .container_btn
+            a
+                font-size: 3em
+
+
+@media screen and ( max-width: 500px )
+    .formulario
+        form
+            .meta
+                width: 80%
+            .pagar
+                width: 80%
+            .contacto
+                width: 80%
+            .boton
+                width: 80%
+
+
+@media screen and ( max-width: 486px )
+    header
+        .container_btn
+            width: 90%
+
+
+@media screen and ( max-width: 431px )
+     header
+        .container_btn
+            width: 95%   
+
+
+@media screen and ( max-width: 410px )
+    header
+        .container_titulo
+            h1
+                font-size: 2.8em
+        .container_btn
+            a
+                font-size: 2.8em             
+    .formulario
+        form
+            .meta
+                width: 90%
+            .pagar
+                width: 90%
+            .contacto
+                width: 90%
+            .boton
+                width: 90%          
+            
+
+@media screen and ( max-width: 386px )
+    header
+        .container_titulo
+            h1
+                font-size: 2.8em
+        .container_btn
+            a
+                font-size: 2.4em
+        
+
+@media screen and ( max-width: 320px )
+    header
+        .container_btn
+            a
+                font-size: 2.2em
